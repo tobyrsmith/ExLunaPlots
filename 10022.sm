@@ -1,0 +1,23 @@
+erase
+expand 1.5
+lweight 5
+
+data 10022_REE.dat
+
+read el 1.s
+read n 2
+read samp 3
+read cc 4
+
+set ratio = samp / cc
+set ratiol = LG(ratio)
+
+limits 56 72 0.8 2.30
+ticksize 1 1 -1 10
+
+box 0 1
+AXIS $fx1 $fx2 n n el $gx1 $gy1 $($gx2-$gx1) 1 0
+
+points n ratiol
+xlabel "Rare Earth Element"
+ylabel "Sample / Chondrite"

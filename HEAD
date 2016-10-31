@@ -1,0 +1,45 @@
+cc = '0.10'
+
+font = {'family' : 'DejaVu Serif',
+        'weight' : 'normal',
+        'size' : 20,
+}
+
+tfont = {
+    'family' : 'DejaVu Serif',
+    'weight' : 'normal',
+    'size' : 14}
+
+sfont = {
+        'family' : 'DejaVu Serif',
+        'weight' : 'bold',
+        'style': 'italic',
+        'size' : 10}
+
+plt.rc('font', **tfont)
+plt.rc("axes", linewidth=2.0,edgecolor=cc)
+
+fig, ax = plt.subplots()
+
+ax = plt.subplot(111, axisbg='0.97', axisbelow=True)
+
+ax.grid(b=True, which='major', color='#ffffff', linewidth=2, linestyle='-')
+
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['bottom'].set_visible(False)
+ax.spines['left'].set_visible(False)
+ax.get_xaxis().tick_bottom()
+ax.get_yaxis().tick_left()
+
+ax.xaxis.set_tick_params(width=2,length=4)
+ax.yaxis.set_tick_params('minor',width=2,length=0)
+ax.yaxis.set_tick_params('major',width=2,length=4)
+
+ax.yaxis.label.set_color(cc)
+ax.xaxis.label.set_color(cc)
+ax.tick_params(axis='x', colors=cc)
+ax.tick_params(axis='y', colors=cc)
+
+# End Defaults
+

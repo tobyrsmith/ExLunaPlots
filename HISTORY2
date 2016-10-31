@@ -1,0 +1,32 @@
+eln,ab,cc = np.loadtxt("10022_REE.dat",usecols=(1,2,3), unpack=True)
+pritn ab
+print ab
+el = np.loadtxt("10022_REE.dat",usecols=[0],dtype='str')
+print el
+%history
+ratio = ab/cc
+print ratio
+import matplotlib.pyplot as plt
+plt.plot(eln,ratio)
+plt.plot(eln,ratio,'o')
+plt.plot(eln,ratio,'o',markersize=5)
+plt.plot(eln,ratio,'o',markersize=15)
+plt.plot(eln,ratio,'o',markersize=15,color='r')
+plt.semilogt(eln,ratio,'o',markersize=15,color='r')
+plt.semilog(eln,ratio,'o',markersize=15,color='r')
+plt.semilogy(eln,ratio,'o',markersize=15,color='r')
+fig, ax = plt.subplots()
+plt.semilogy(eln,ratio,'o',markersize=15,color='r')
+ax.yaxis.set_major_formatter(plt.FixedFormatter(el))
+ax.xaxis.set_major_formatter(plt.FixedFormatter(el))
+plt.semilogy(eln,ratio,'o',markersize=15,color='r')
+plt.xaxis?
+plt.xlim?
+ax.xaxis.set_major_locator(plt.MultipleLocator(1))
+plt.semilogy(eln,ratio,'o',markersize=15,color='r')
+ax.xaxis.set_major_locator(plt.MultipleLocator(2))
+plt.semilogy(eln,ratio,'o',markersize=15,color='r')
+ax.xaxis.set_major_locator(plt.MultipleLocator(1))
+ax.xaxis.set_major_formatter(plt.FixedFormatter(el))
+plt.semilogy(eln,ratio,'o',markersize=15,color='r')
+%history -f HISTORY2

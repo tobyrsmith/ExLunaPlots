@@ -1,0 +1,40 @@
+46: 
+47: a,b = np.loadtxt("10022_REE.dat",usecols=(1,2,3), unpack=True)
+48: a,b,c = np.loadtxt("10022_REE.dat",usecols=(1,2,3), unpack=True)
+49: print a
+50: print x.med()
+51: 
+52: a,b,c,d = np.loadtxt("10022_REE.dat",usecols=(0,1,2,3),dtype='|S2,i2,f4,f4', unpack=True)
+53: a,b,c,d,e = np.loadtxt("10022_REE.dat",usecols=(0,1,2,3),dtype='|S2,i2,f4,f4', unpack=True)
+54: a,b,c,d,e = np.loadtxt("10022_REE.dat",usecols=(0,1,2,3),dtype='|S2,i2,f4,f4', unpack=True)
+55: np.loadtxt("10022_REE.dat",usecols=(1,2,3), unpack=True)
+56: np.loadtxt("10022_REE.dat",usecols=(0,1,2,3),dtype='|S2,i2,f4,f4', unpack=True)
+57: np.loadtxt("10022_REE.dat",usecols=(1,2,3),dtype='i2,f4,f4', unpack=True)
+58: np.loadtxt("10022_REE.dat",dtype='i2,f4,f4', unpack=True)
+59: np.loadtxt("10022_REE.dat",usecols=(1,2,3),dtype='i2,f4,f4', unpack=True)
+60: np.loadtxt("10022_REE.dat",usecols=(1,2,3),dtype='i2,f4,f4')
+61: np.loadtxt("10022_REE.dat",usecols=(1,2,3),dtype='i2,f4,f4', unpack=True)
+62: np.loadtxt("10022_REE.dat",unpack=True)
+63: eln,ab,cc = np.loadtxt("10022_REE.dat",usecols=(1,2,3),dtype='i2,f4,f4', unpack=True)
+64: eln,ab,cc = np.loadtxt("10022_REE.dat",usecols=(1,2,3), unpack=True)
+65: print eln
+66: print ab
+67: el = np.loadtxt("10022_REE.dat",usecols=(0), dtype='|s2',unpack=True)
+68: el = np.loadtxt("10022_REE.dat",usecols=(0), dtype='|s2')
+69: np.loadtxt("10022_REE.dat",usecols=(0), dtype='|s2')
+70: np.loadtxt("10022_REE.dat",usecols=(0,),dtype='|s2')
+71: np.loadtxt("10022_REE.dat",usecols=(0),dtype='|s2')
+72: np.loadtxt("10022_REE.dat",dtype='|s2')
+73: np.loadtxt("10022_REE.dat",dtype='str')
+74: np.loadtxt("10022_REE.dat",usecols=(0),dtype='str')
+75: np.loadtxt("10022_REE.dat",usecols=(0,0),dtype='str')
+76: np.loadtxt("10022_REE.dat",usecols=(,0),dtype='str')
+77: np.loadtxt("10022_REE.dat",usecols=(0),dtype='str')
+78: np.loadtxt("10022_REE.dat",usecols=(0,1),dtype='str')
+79: np.loadtxt("10022_REE.dat",usecols=[0],dtype='str')
+80: el = np.loadtxt("10022_REE.dat",usecols=[0],dtype='str')
+81: print el
+82: print aln
+83: print eln
+84: _ip.magic("history ")
+85: _ip.magic("history -f HISTORY")
